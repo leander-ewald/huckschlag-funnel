@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --blue: #005280;
+  --blue-dark: #003d60;
+  --green: #68b696;
+  --green-dark: #549a7e;
+  --green-light: #ecfffb;
+  --teal: #47d6b6;
+  --mint: #bff8d4;
+  --dark: #242424;
+  --gray-600: #444444;
+  --gray-400: #9799aa;
+  --gray-200: #e5e7eb;
+  --gray-100: #f3f4f6;
+  --white: #ffffff;
+}
+
+@theme inline {
+  --color-blue: var(--blue);
+  --color-blue-dark: var(--blue-dark);
+  --color-green: var(--green);
+  --color-green-dark: var(--green-dark);
+  --color-green-light: var(--green-light);
+  --color-teal: var(--teal);
+  --color-mint: var(--mint);
+  --color-dark: var(--dark);
+  --color-gray-600: var(--gray-600);
+  --color-gray-400: var(--gray-400);
+  --color-gray-200: var(--gray-200);
+  --color-gray-100: var(--gray-100);
+  --font-sans: var(--font-poppins);
+  --font-heading: var(--font-ubuntu);
+}
+
+body {
+  font-family: var(--font-poppins), system-ui, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-ubuntu), system-ui, sans-serif;
+  font-weight: 700;
+}
+
+/* Selection */
+::selection {
+  background: var(--green);
+  color: var(--white);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
