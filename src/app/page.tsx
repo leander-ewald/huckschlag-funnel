@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   Warehouse,
@@ -15,7 +16,6 @@ import {
   CheckCircle2,
   TrendingUp,
   Truck,
-  Building2,
   Star,
 } from "lucide-react";
 
@@ -25,14 +25,16 @@ export default function HomePage() {
       {/* ── NAVIGATION ── */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-blue/95 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center">
-              <Building2 className="w-5 h-5 text-green" />
-            </div>
-            <span className="text-white font-bold text-sm sm:text-base">
-              Spedition Huckschlag
-            </span>
-          </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/huckschlag-logo-white.svg"
+              alt="Spedition Huckschlag"
+              width={180}
+              height={36}
+              className="h-8 sm:h-9 w-auto"
+              priority
+            />
+          </Link>
           <Link
             href="/logistikpartner"
             className="bg-green hover:bg-green-dark text-white text-sm font-semibold px-5 py-3 rounded-full transition-all shadow-lg shadow-green/25 hover:shadow-green/40"
@@ -438,8 +440,14 @@ export default function HomePage() {
               &bdquo;2024 wird E-Commerce weiter an Bedeutung gewinnen. Als Logistiker haben wir uns darauf vorbereitet: Mit AutoStore, digitalen Prozessen und einem Team, das f&uuml;r unsere Kunden alles gibt. Wir sind nicht einfach ein Lager — wir sind Ihr Wachstumspartner.&ldquo;
             </blockquote>
             <div className="flex items-center justify-center gap-4">
-              <div className="w-14 h-14 bg-blue/10 rounded-full flex items-center justify-center">
-                <Building2 className="w-7 h-7 text-blue" />
+              <div className="w-14 h-14 bg-blue/10 rounded-full flex items-center justify-center overflow-hidden p-2">
+                <Image
+                  src="/huckschlag-logo.svg"
+                  alt="Huckschlag"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="text-left">
                 <p className="font-bold text-dark">Thomas Huckschlag</p>
@@ -492,11 +500,14 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 mb-8 sm:mb-10">
             {/* Company */}
             <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center">
-                  <Building2 className="w-5 h-5 text-green" />
-                </div>
-                <span className="text-white font-bold">Spedition Huckschlag</span>
+              <div className="mb-4">
+                <Image
+                  src="/huckschlag-logo-white.svg"
+                  alt="Spedition Huckschlag"
+                  width={200}
+                  height={40}
+                  className="h-10 w-auto"
+                />
               </div>
               <p className="text-white/40 text-sm">
                 Die Logistikmacher seit &uuml;ber 40 Jahren. Kontraktlogistik, Warehousing und E-Commerce Fulfillment aus Fr&ouml;ndenberg/Ruhr.

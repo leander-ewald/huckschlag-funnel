@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import Image from "next/image";
 import {
   Package,
   Mail,
@@ -255,8 +256,15 @@ export default function FunnelPage() {
             <p><span className="text-gray-400">E-Mail:</span> <strong>{formData.email}</strong></p>
             {formData.company && <p><span className="text-gray-400">Unternehmen:</span> <strong>{formData.company}</strong></p>}
           </div>
-          <div className="mt-8 pt-6 border-t border-gray-200 text-sm text-gray-400">
-            Spedition Huckschlag GmbH &middot; Landstr. 2 &middot; 58730 Fröndenberg
+          <div className="mt-8 pt-6 border-t border-gray-200 flex flex-col items-center gap-3">
+            <Image
+              src="/huckschlag-logo.svg"
+              alt="Spedition Huckschlag"
+              width={160}
+              height={32}
+              className="h-8 w-auto opacity-60"
+            />
+            <p className="text-sm text-gray-400">Landstr. 2 &middot; 58730 Fr&ouml;ndenberg</p>
           </div>
         </div>
       </div>
@@ -270,13 +278,14 @@ export default function FunnelPage() {
       <header className="px-4 pt-5 pb-3 sm:pt-6 sm:pb-4">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
-              <Building2 className="w-5 h-5 text-green" />
-            </div>
-            <div>
-              <p className="text-white font-bold text-sm leading-tight">Spedition Huckschlag</p>
-              <p className="text-white/50 text-xs">Logistiklösung in 60 Sekunden</p>
-            </div>
+            <Image
+              src="/huckschlag-logo-white.svg"
+              alt="Spedition Huckschlag"
+              width={160}
+              height={32}
+              className="h-7 sm:h-8 w-auto"
+              priority
+            />
           </div>
           <div className="text-right">
             <p className="text-white/50 text-xs">{stepLabel()}</p>
