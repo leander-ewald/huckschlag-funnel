@@ -299,7 +299,7 @@ export default function FunnelPage() {
       {/* Main Content */}
       <div className="flex-1 flex items-center justify-center px-4 py-6 sm:py-8">
         <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden">
-          <div className="p-6 sm:p-8 md:p-10">
+          <div className="p-4 sm:p-6 md:p-10">
             {step === 0 && <StepDelivery value={formData.deliveryVolume} onChange={(v) => updateField("deliveryVolume", v)} />}
             {step === 1 && <StepGoods selected={formData.goodsTypes} onToggle={(v) => toggleMulti("goodsTypes", v)} />}
             {step === 2 && <StepTarget value={formData.targetAudience} onChange={(v) => updateField("targetAudience", v)} />}
@@ -314,7 +314,7 @@ export default function FunnelPage() {
 
           {/* Error message */}
           {error && (
-            <div className="px-6 sm:px-8 md:px-10">
+            <div className="px-4 sm:px-8 md:px-10">
               <div className="bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg px-4 py-3 mb-4">
                 {error}
               </div>
@@ -322,11 +322,11 @@ export default function FunnelPage() {
           )}
 
           {/* Navigation */}
-          <div className="px-6 sm:px-8 md:px-10 pb-6 sm:pb-8 md:pb-10 flex items-center justify-between gap-4">
+          <div className="px-4 sm:px-8 md:px-10 pb-5 sm:pb-8 md:pb-10 flex items-center justify-between gap-3">
             <button
               onClick={prev}
               disabled={step === 0}
-              className={`flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition-all ${
+              className={`flex items-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-3 rounded-full text-sm font-medium transition-all min-h-[44px] ${
                 step === 0
                   ? "text-gray-300 cursor-default"
                   : "text-gray-600 hover:text-dark hover:bg-gray-100"
@@ -340,7 +340,7 @@ export default function FunnelPage() {
               <button
                 onClick={next}
                 disabled={!canProceed()}
-                className={`flex items-center gap-2 px-7 py-3 rounded-full text-sm font-semibold transition-all ${
+                className={`flex items-center gap-1.5 sm:gap-2 px-5 sm:px-7 py-3 rounded-full text-sm font-semibold transition-all min-h-[44px] ${
                   canProceed()
                     ? "bg-green text-white hover:bg-green-dark shadow-lg shadow-green/25 hover:shadow-green/40"
                     : "bg-gray-200 text-gray-400 cursor-default"
@@ -353,7 +353,7 @@ export default function FunnelPage() {
               <button
                 onClick={handleSubmit}
                 disabled={!canProceed() || submitting}
-                className={`flex items-center gap-2 px-7 py-3 rounded-full text-sm font-semibold transition-all ${
+                className={`flex items-center gap-1.5 sm:gap-2 px-5 sm:px-7 py-3 rounded-full text-sm font-semibold transition-all min-h-[44px] ${
                   canProceed() && !submitting
                     ? "bg-green text-white hover:bg-green-dark shadow-lg shadow-green/25 hover:shadow-green/40"
                     : "bg-gray-200 text-gray-400 cursor-default"
@@ -366,7 +366,8 @@ export default function FunnelPage() {
                   </>
                 ) : (
                   <>
-                    Jetzt kostenloses Gespräch sichern
+                    <span className="sm:hidden">Absenden</span>
+                    <span className="hidden sm:inline">Jetzt kostenloses Gespräch sichern</span>
                     <ArrowRight className="w-4 h-4" />
                   </>
                 )}
@@ -378,21 +379,21 @@ export default function FunnelPage() {
 
       {/* Trust Bar */}
       <footer className="px-4 pb-5 sm:pb-6">
-        <div className="max-w-2xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-white/40">
+        <div className="max-w-2xl mx-auto flex flex-wrap items-center justify-center gap-x-5 sm:gap-x-6 gap-y-2 text-xs text-white/40">
           <span className="flex items-center gap-1.5">
-            <Lock className="w-3.5 h-3.5" />
+            <Lock className="w-4 h-4 sm:w-3.5 sm:h-3.5" />
             Sichere Verbindung
           </span>
           <span className="flex items-center gap-1.5">
-            <ShieldCheck className="w-3.5 h-3.5" />
+            <ShieldCheck className="w-4 h-4 sm:w-3.5 sm:h-3.5" />
             Kein Spam
           </span>
           <span className="flex items-center gap-1.5">
-            <Star className="w-3.5 h-3.5" />
+            <Star className="w-4 h-4 sm:w-3.5 sm:h-3.5" />
             Seit 40+ Jahren
           </span>
           <span className="flex items-center gap-1.5">
-            <Truck className="w-3.5 h-3.5" />
+            <Truck className="w-4 h-4 sm:w-3.5 sm:h-3.5" />
             145 Mitarbeitende
           </span>
         </div>
@@ -588,14 +589,14 @@ function StepContact({ formData, updateField }: { formData: FunnelFormData; upda
         </div>
         <InputField label="Deine Telefonnummer *" value={formData.phone} onChange={(v) => updateField("phone", v)} placeholder="Deine Telefonnummer" type="tel" icon={<Phone className="w-4 h-4" />} />
         <InputField label="Deine Unternehmenswebseite" value={formData.website} onChange={(v) => updateField("website", v)} placeholder="Deine Unternehmenswebseite" icon={<Globe className="w-4 h-4" />} />
-        <label className="flex items-start gap-3 cursor-pointer group">
+        <label className="flex items-start gap-3 cursor-pointer group py-1">
           <input
             type="checkbox"
             checked={formData.privacy}
             onChange={(e) => updateField("privacy", e.target.checked)}
-            className="mt-1 w-4 h-4 rounded border-gray-300 text-green focus:ring-green/30 cursor-pointer"
+            className="mt-0.5 w-5 h-5 rounded border-gray-300 text-green focus:ring-green/30 cursor-pointer flex-shrink-0"
           />
-          <span className="text-xs text-gray-500 group-hover:text-gray-700 transition-colors">
+          <span className="text-xs sm:text-sm text-gray-500 group-hover:text-gray-700 transition-colors">
             Ich akzeptiere die Datenschutzbestimmungen
           </span>
         </label>
@@ -610,15 +611,15 @@ function StepContact({ formData, updateField }: { formData: FunnelFormData; upda
 
 function OptionCard({ selected, onClick, icon, label, desc, multiSelect }: { selected: boolean; onClick: () => void; icon: React.ReactNode; label: string; desc?: string; multiSelect?: boolean }) {
   return (
-    <button onClick={onClick} className={`relative flex items-center gap-3 p-4 rounded-xl border-2 text-left transition-all ${selected ? "border-green bg-green-light shadow-sm" : "border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-100/50"}`}>
-      <div className={`flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center transition-colors ${selected ? "bg-green text-white" : "bg-gray-100 text-gray-400"}`}>
+    <button onClick={onClick} className={`relative flex items-center gap-3 p-3 sm:p-4 rounded-xl border-2 text-left transition-all min-h-[48px] ${selected ? "border-green bg-green-light shadow-sm" : "border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-100/50"}`}>
+      <div className={`flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center transition-colors ${selected ? "bg-green text-white" : "bg-gray-100 text-gray-400"}`}>
         {icon}
       </div>
-      <div className="min-w-0">
+      <div className="min-w-0 pr-6">
         <p className={`font-semibold text-sm ${selected ? "text-dark" : "text-gray-600"}`}>{label}</p>
-        {desc && <p className="text-xs text-gray-400 mt-0.5">{desc}</p>}
+        {desc && <p className="text-xs text-gray-400 mt-0.5 leading-snug">{desc}</p>}
       </div>
-      <div className="absolute top-3 right-3">
+      <div className="absolute top-2.5 right-2.5 sm:top-3 sm:right-3">
         <div className={`w-5 h-5 ${multiSelect ? "rounded-md" : "rounded-full"} border-2 flex items-center justify-center transition-all ${selected ? "border-green bg-green" : "border-gray-300 bg-white"}`}>
           {selected && <CheckCircle2 className="w-3 h-3 text-white" />}
         </div>

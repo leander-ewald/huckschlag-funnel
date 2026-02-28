@@ -35,7 +35,7 @@ export default function HomePage() {
           </div>
           <Link
             href="/logistikpartner"
-            className="bg-green hover:bg-green-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-lg shadow-green/25 hover:shadow-green/40"
+            className="bg-green hover:bg-green-dark text-white text-sm font-semibold px-5 py-3 rounded-full transition-all shadow-lg shadow-green/25 hover:shadow-green/40"
           >
             Jetzt starten
           </Link>
@@ -43,7 +43,7 @@ export default function HomePage() {
       </nav>
 
       {/* ── HERO ── */}
-      <section className="relative bg-gradient-to-br from-blue to-blue-dark pt-28 pb-20 sm:pt-36 sm:pb-28 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-blue to-blue-dark pt-24 pb-14 sm:pt-36 sm:pb-28 overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-24 -right-24 w-96 h-96 bg-green/5 rounded-full blur-3xl" />
@@ -58,7 +58,7 @@ export default function HomePage() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Wir bewegen Waren — und davon ganz sch&ouml;n viel!
             </h1>
-            <p className="text-white/70 text-base sm:text-lg mb-10 max-w-xl">
+            <p className="text-white/70 text-base sm:text-lg mb-8 max-w-xl">
               Kontraktlogistik, Warehousing und E-Commerce Fulfillment aus einer Hand. Modern, automatisiert und zuverl&auml;ssig.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -98,9 +98,9 @@ export default function HomePage() {
       </section>
 
       {/* ── SERVICES ── */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-12 sm:py-20 md:py-28 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
             <p className="text-green text-xs font-semibold uppercase tracking-wider mb-3">
               Unsere Leistungen
             </p>
@@ -114,7 +114,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Kontraktlogistik */}
-            <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-green/30 hover:shadow-lg transition-all group">
+            <div className="bg-white border-2 border-gray-200 rounded-2xl p-5 sm:p-8 hover:border-green/30 hover:shadow-lg transition-all group">
               <div className="w-14 h-14 bg-green/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green/20 transition-colors">
                 <Warehouse className="w-7 h-7 text-green" />
               </div>
@@ -143,7 +143,7 @@ export default function HomePage() {
             </div>
 
             {/* Warehousing */}
-            <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-green/30 hover:shadow-lg transition-all group">
+            <div className="bg-white border-2 border-gray-200 rounded-2xl p-5 sm:p-8 hover:border-green/30 hover:shadow-lg transition-all group">
               <div className="w-14 h-14 bg-green/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green/20 transition-colors">
                 <Boxes className="w-7 h-7 text-green" />
               </div>
@@ -172,7 +172,7 @@ export default function HomePage() {
             </div>
 
             {/* E-Commerce Fulfillment */}
-            <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-green/30 hover:shadow-lg transition-all group">
+            <div className="bg-white border-2 border-gray-200 rounded-2xl p-5 sm:p-8 hover:border-green/30 hover:shadow-lg transition-all group">
               <div className="w-14 h-14 bg-green/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green/20 transition-colors">
                 <ShoppingCart className="w-7 h-7 text-green" />
               </div>
@@ -204,13 +204,13 @@ export default function HomePage() {
       </section>
 
       {/* ── AUTOSTORE ── */}
-      <section className="py-20 sm:py-28 bg-gradient-to-br from-blue to-blue-dark relative overflow-hidden">
+      <section className="py-12 sm:py-20 md:py-28 bg-gradient-to-br from-blue to-blue-dark relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/2 -translate-y-1/2 -right-48 w-[600px] h-[600px] bg-green/5 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
               <p className="text-green text-xs font-semibold uppercase tracking-wider mb-3">
                 Technologie
@@ -238,7 +238,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 sm:p-10 border border-white/10">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 sm:p-8 md:p-10 border border-white/10">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-green/20 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -283,9 +283,9 @@ export default function HomePage() {
       </section>
 
       {/* ── ERFAHRUNG / STATS ── */}
-      <section className="py-20 sm:py-28 bg-gray-100">
+      <section className="py-12 sm:py-20 md:py-28 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
             <p className="text-green text-xs font-semibold uppercase tracking-wider mb-3">
               Erfahrung &amp; Kompetenz
             </p>
@@ -297,31 +297,31 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-14">
-            <div className="bg-white rounded-2xl p-6 sm:p-8 text-center border border-gray-200 shadow-sm">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 mb-10 sm:mb-14">
+            <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 text-center border border-gray-200 shadow-sm">
               <Clock className="w-8 h-8 text-green mx-auto mb-3" />
               <p className="text-3xl sm:text-4xl font-bold text-dark mb-1">40+</p>
               <p className="text-gray-400 text-sm">Jahre Erfahrung</p>
             </div>
-            <div className="bg-white rounded-2xl p-6 sm:p-8 text-center border border-gray-200 shadow-sm">
+            <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 text-center border border-gray-200 shadow-sm">
               <Users className="w-8 h-8 text-green mx-auto mb-3" />
               <p className="text-3xl sm:text-4xl font-bold text-dark mb-1">145</p>
               <p className="text-gray-400 text-sm">Mitarbeitende</p>
             </div>
-            <div className="bg-white rounded-2xl p-6 sm:p-8 text-center border border-gray-200 shadow-sm">
+            <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 text-center border border-gray-200 shadow-sm">
               <Package className="w-8 h-8 text-green mx-auto mb-3" />
               <p className="text-3xl sm:text-4xl font-bold text-dark mb-1">80.000</p>
               <p className="text-gray-400 text-sm">Paletten Kapazit&auml;t</p>
             </div>
-            <div className="bg-white rounded-2xl p-6 sm:p-8 text-center border border-gray-200 shadow-sm">
+            <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 text-center border border-gray-200 shadow-sm">
               <Cpu className="w-8 h-8 text-green mx-auto mb-3" />
               <p className="text-3xl sm:text-4xl font-bold text-dark mb-1">10.000</p>
               <p className="text-gray-400 text-sm">AutoStore Beh&auml;lter</p>
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="bg-white rounded-2xl p-5 sm:p-8 md:p-12 border border-gray-200 shadow-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-dark mb-4">
                   Tradition trifft Innovation
@@ -362,9 +362,9 @@ export default function HomePage() {
       </section>
 
       {/* ── E-COMMERCE SECTION ── */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-12 sm:py-20 md:py-28 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
               <p className="text-green text-xs font-semibold uppercase tracking-wider mb-3">
                 E-Commerce
@@ -430,11 +430,11 @@ export default function HomePage() {
       </section>
 
       {/* ── TESTIMONIAL ── */}
-      <section className="py-20 sm:py-28 bg-gray-100">
+      <section className="py-12 sm:py-20 md:py-28 bg-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm text-center">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 md:p-12 border border-gray-200 shadow-sm text-center">
             <Quote className="w-10 h-10 text-green/30 mx-auto mb-6" />
-            <blockquote className="text-lg sm:text-xl md:text-2xl text-dark font-medium leading-relaxed mb-8">
+            <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl text-dark font-medium leading-relaxed mb-6 sm:mb-8">
               &bdquo;2024 wird E-Commerce weiter an Bedeutung gewinnen. Als Logistiker haben wir uns darauf vorbereitet: Mit AutoStore, digitalen Prozessen und einem Team, das f&uuml;r unsere Kunden alles gibt. Wir sind nicht einfach ein Lager — wir sind Ihr Wachstumspartner.&ldquo;
             </blockquote>
             <div className="flex items-center justify-center gap-4">
@@ -451,7 +451,7 @@ export default function HomePage() {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section className="py-20 sm:py-28 bg-gradient-to-br from-blue to-blue-dark relative overflow-hidden">
+      <section className="py-12 sm:py-20 md:py-28 bg-gradient-to-br from-blue to-blue-dark relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-green/5 rounded-full blur-3xl" />
         </div>
@@ -459,7 +459,7 @@ export default function HomePage() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
             Bereit f&uuml;r die n&auml;chste Stufe?
           </h2>
-          <p className="text-white/70 text-base sm:text-lg mb-10 max-w-xl mx-auto">
+          <p className="text-white/70 text-base sm:text-lg mb-8 max-w-xl mx-auto">
             Finden Sie in nur 60 Sekunden heraus, welche Logistikl&ouml;sung perfekt zu Ihrem Unternehmen passt.
           </p>
           <Link
@@ -487,9 +487,9 @@ export default function HomePage() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer className="bg-dark py-12 sm:py-16">
+      <footer className="bg-dark py-10 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 mb-8 sm:mb-10">
             {/* Company */}
             <div>
               <div className="flex items-center gap-3 mb-4">
