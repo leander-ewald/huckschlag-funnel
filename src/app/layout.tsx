@@ -23,9 +23,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "In 60 Sekunden zur passenden Logistikl\u00f6sung | Spedition Huckschlag",
+  title: "Spedition Huckschlag | Kontraktlogistik, Warehousing & E-Commerce Fulfillment",
   description:
-    "Erhalte in nur 60 Sekunden die passende Logistikl\u00f6sung f\u00fcr dein Unternehmen. Spedition Huckschlag \u2013 Die Logistikmacher seit 40+ Jahren.",
+    "Spedition Huckschlag — Die Logistikmacher seit 40+ Jahren. Kontraktlogistik, Warehousing und E-Commerce Fulfillment mit AutoStore-Technologie aus Fr\u00f6ndenberg/Ruhr.",
   robots: "noindex, nofollow",
 };
 
