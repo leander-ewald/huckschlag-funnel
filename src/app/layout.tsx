@@ -25,7 +25,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Spedition Huckschlag | Kontraktlogistik, Warehousing & E-Commerce Fulfillment",
   description:
-    "Spedition Huckschlag — Die Logistikmacher seit 40+ Jahren. Kontraktlogistik, Warehousing und E-Commerce Fulfillment mit AutoStore-Technologie aus Fr\u00f6ndenberg/Ruhr.",
+    "Spedition Huckschlag — Die Logistikmacher seit 40+ Jahren. Kontraktlogistik, Warehousing und E-Commerce Fulfillment mit AutoStore-Technologie aus Fröndenberg/Ruhr.",
   robots: "noindex, nofollow",
 };
 

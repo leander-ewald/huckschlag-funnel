@@ -65,19 +65,19 @@ interface FunnelFormData {
    ══════════════════════════════════════════════════════════════ */
 const DELIVERY_OPTIONS = [
   { value: "lt100", label: "<100", icon: Mail },
-  { value: "100-1000", label: "100 \u2013 1.000", icon: Package },
-  { value: "1000-5000", label: "1.000 \u2013 5.000", icon: TrendingUp },
+  { value: "100-1000", label: "100 – 1.000", icon: Package },
+  { value: "1000-5000", label: "1.000 – 5.000", icon: TrendingUp },
   { value: "gt5000", label: ">5.000", icon: Truck },
 ];
 
 const GOODS_OPTIONS = [
-  { value: "konsumgueter", label: "Konsumg\u00fcter", desc: "z.\u00a0B. Kleidung, Schuhe, Accessoires, Schmuck", icon: ShoppingBag },
-  { value: "elektronik", label: "Elektronik", desc: "z.\u00a0B. Kopfh\u00f6rer, Handy-Zubeh\u00f6r", icon: Cpu },
-  { value: "kosmetik", label: "Kosmetik & Pflegeprodukte", desc: "z.\u00a0B. Drogeriebedarf, Cremes, Make-up", icon: Sparkles },
-  { value: "haushalt", label: "Haushaltswaren", desc: "z.\u00a0B. K\u00fcchenartikel, Deko, M\u00f6bel, Geb\u00e4udeausstattung", icon: Home },
-  { value: "buecher", label: "B\u00fccher & Medien", desc: "z.\u00a0B. B\u00fccher, Hefte", icon: BookOpen },
-  { value: "nahrungsmittel", label: "Nahrungsmittel", desc: "z.\u00a0B. Erg\u00e4nzungsprodukte, Trockenprodukte", icon: Leaf },
-  { value: "sonstiges_waren", label: "Sonstiges", desc: "z.\u00a0B. Spielzeug, Geschenkartikel, Heimtierbedarf", icon: Package },
+  { value: "konsumgueter", label: "Konsumgüter", desc: "z. B. Kleidung, Schuhe, Accessoires, Schmuck", icon: ShoppingBag },
+  { value: "elektronik", label: "Elektronik", desc: "z. B. Kopfhörer, Handy-Zubehör", icon: Cpu },
+  { value: "kosmetik", label: "Kosmetik & Pflegeprodukte", desc: "z. B. Drogeriebedarf, Cremes, Make-up", icon: Sparkles },
+  { value: "haushalt", label: "Haushaltswaren", desc: "z. B. Küchenartikel, Deko, Möbel, Gebäudeausstattung", icon: Home },
+  { value: "buecher", label: "Bücher & Medien", desc: "z. B. Bücher, Hefte", icon: BookOpen },
+  { value: "nahrungsmittel", label: "Nahrungsmittel", desc: "z. B. Ergänzungsprodukte, Trockenprodukte", icon: Leaf },
+  { value: "sonstiges_waren", label: "Sonstiges", desc: "z. B. Spielzeug, Geschenkartikel, Heimtierbedarf", icon: Package },
 ];
 
 const TARGET_OPTIONS = [
@@ -97,7 +97,7 @@ const SERVICE_OPTIONS = [
 
 const CHALLENGE_OPTIONS = [
   { value: "onemanshow", label: "One Man Show", icon: User },
-  { value: "unzuverlaessig", label: "Unzuverl\u00e4ssige Spedition", icon: AlertTriangle },
+  { value: "unzuverlaessig", label: "Unzuverlässige Spedition", icon: AlertTriangle },
   { value: "kosten", label: "Zu hohe Kosten", icon: Banknote },
   { value: "skalierbarkeit", label: "Skalierbarkeit fehlt", icon: TrendingUp },
   { value: "retouren", label: "Viele Retouren", icon: RotateCcw },
@@ -115,15 +115,15 @@ const SHOP_OPTIONS = [
   { value: "shopware", label: "Shopware", icon: ShoppingCart },
   { value: "woocommerce", label: "WooCommerce", icon: ShoppingCart },
   { value: "magento", label: "Magento", icon: ShoppingCart },
-  { value: "eigenloesung", label: "Eigenl\u00f6sung", icon: Code },
+  { value: "eigenloesung", label: "Eigenlösung", icon: Code },
   { value: "sonstiges_shop", label: "Sonstiges", icon: Code },
 ];
 
 const BUDGET_OPTIONS = [
-  { value: "lt1000", label: "<1.000 \u20ac", icon: Wallet },
-  { value: "1000-5000", label: "1.000\u20135.000 \u20ac", icon: Banknote },
-  { value: "5000-20000", label: "5.000\u201320.000 \u20ac", icon: TrendingUp },
-  { value: "gt20000", label: ">20.000 \u20ac", icon: BarChart3 },
+  { value: "lt1000", label: "<1.000 €", icon: Wallet },
+  { value: "1000-5000", label: "1.000–5.000 €", icon: Banknote },
+  { value: "5000-20000", label: "5.000–20.000 €", icon: TrendingUp },
+  { value: "gt20000", label: ">20.000 €", icon: BarChart3 },
 ];
 
 const TOTAL_QUESTIONS = 9;
@@ -215,7 +215,7 @@ export default function FunnelPage() {
 
       if (!res.ok) {
         const body = await res.json().catch(() => null);
-        throw new Error(body?.error || "\u00dcbermittlung fehlgeschlagen");
+        throw new Error(body?.error || "Übermittlung fehlgeschlagen");
       }
 
       setSubmitted(true);
@@ -256,7 +256,7 @@ export default function FunnelPage() {
             {formData.company && <p><span className="text-gray-400">Unternehmen:</span> <strong>{formData.company}</strong></p>}
           </div>
           <div className="mt-8 pt-6 border-t border-gray-200 text-sm text-gray-400">
-            Spedition Huckschlag GmbH &middot; Landstr. 2 &middot; 58730 Fr\u00f6ndenberg
+            Spedition Huckschlag GmbH &middot; Landstr. 2 &middot; 58730 Fröndenberg
           </div>
         </div>
       </div>
@@ -275,7 +275,7 @@ export default function FunnelPage() {
             </div>
             <div>
               <p className="text-white font-bold text-sm leading-tight">Spedition Huckschlag</p>
-              <p className="text-white/50 text-xs">Logistikl\u00f6sung in 60 Sekunden</p>
+              <p className="text-white/50 text-xs">Logistiklösung in 60 Sekunden</p>
             </div>
           </div>
           <div className="text-right">
@@ -333,7 +333,7 @@ export default function FunnelPage() {
               }`}
             >
               <ChevronLeft className="w-4 h-4" />
-              Zur\u00fcck
+              Zurück
             </button>
 
             {step < TOTAL_STEPS - 1 ? (
@@ -362,11 +362,11 @@ export default function FunnelPage() {
                 {submitting ? (
                   <>
                     <Loader2 className="w-4 h-4 animate-spin" />
-                    Wird gesendet\u2026
+                    Wird gesendet…
                   </>
                 ) : (
                   <>
-                    Jetzt kostenloses Gespr\u00e4ch sichern
+                    Jetzt kostenloses Gespräch sichern
                     <ArrowRight className="w-4 h-4" />
                   </>
                 )}
@@ -410,7 +410,7 @@ function StepDelivery({ value, onChange }: { value: string; onChange: (v: string
     <div>
       <p className="text-green text-xs font-semibold uppercase tracking-wider mb-2">Frage 1 von 8</p>
       <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Wie viele Lieferpositionen hast du durchschnittlich pro Monat?</h2>
-      <p className="text-gray-400 text-sm mb-6">W\u00e4hle die passende Gr\u00f6\u00dfenordnung.</p>
+      <p className="text-gray-400 text-sm mb-6">Wähle die passende Größenordnung.</p>
       <div className="grid grid-cols-2 gap-3">
         {DELIVERY_OPTIONS.map((opt) => {
           const Icon = opt.icon;
@@ -427,8 +427,8 @@ function StepGoods({ selected, onToggle }: { selected: string[]; onToggle: (v: s
   return (
     <div>
       <p className="text-green text-xs font-semibold uppercase tracking-wider mb-2">Frage 2 von 8</p>
-      <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Welche Art von Waren versendet ihr haupts\u00e4chlich?</h2>
-      <p className="text-gray-400 text-sm mb-6">Mehrfachauswahl m\u00f6glich.</p>
+      <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Welche Art von Waren versendet ihr hauptsächlich?</h2>
+      <p className="text-gray-400 text-sm mb-6">Mehrfachauswahl möglich.</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {GOODS_OPTIONS.map((opt) => {
           const Icon = opt.icon;
@@ -446,7 +446,7 @@ function StepTarget({ value, onChange }: { value: string; onChange: (v: string) 
     <div>
       <p className="text-green text-xs font-semibold uppercase tracking-wider mb-2">Frage 3 von 8</p>
       <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Welche Zielgruppen beliefert ihr?</h2>
-      <p className="text-gray-400 text-sm mb-6">W\u00e4hle eure Hauptzielgruppe.</p>
+      <p className="text-gray-400 text-sm mb-6">Wähle eure Hauptzielgruppe.</p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {TARGET_OPTIONS.map((opt) => {
           const Icon = opt.icon;
@@ -463,8 +463,8 @@ function StepServices({ selected, onToggle }: { selected: string[]; onToggle: (v
   return (
     <div>
       <p className="text-green text-xs font-semibold uppercase tracking-wider mb-2">Frage 4 von 8</p>
-      <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Welche Leistungen sind f\u00fcr euch am relevantesten?</h2>
-      <p className="text-gray-400 text-sm mb-6">Mehrfachauswahl m\u00f6glich.</p>
+      <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Welche Leistungen sind für euch am relevantesten?</h2>
+      <p className="text-gray-400 text-sm mb-6">Mehrfachauswahl möglich.</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {SERVICE_OPTIONS.map((opt) => {
           const Icon = opt.icon;
@@ -482,7 +482,7 @@ function StepChallenges({ selected, onToggle }: { selected: string[]; onToggle: 
     <div>
       <p className="text-green text-xs font-semibold uppercase tracking-wider mb-2">Frage 5 von 8</p>
       <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Welche Herausforderungen habt ihr aktuell im Versand oder in der Logistik?</h2>
-      <p className="text-gray-400 text-sm mb-6">Mehrfachauswahl m\u00f6glich.</p>
+      <p className="text-gray-400 text-sm mb-6">Mehrfachauswahl möglich.</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {CHALLENGE_OPTIONS.map((opt) => {
           const Icon = opt.icon;
@@ -500,7 +500,7 @@ function StepRegion({ value, onChange }: { value: string; onChange: (v: string) 
     <div>
       <p className="text-green text-xs font-semibold uppercase tracking-wider mb-2">Frage 6 von 8</p>
       <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Welche Regionen wollt ihr beliefert haben?</h2>
-      <p className="text-gray-400 text-sm mb-6">W\u00e4hle euren Lieferbereich.</p>
+      <p className="text-gray-400 text-sm mb-6">Wähle euren Lieferbereich.</p>
       <div className="grid grid-cols-2 gap-3">
         {REGION_OPTIONS.map((opt) => {
           const Icon = opt.icon;
@@ -518,7 +518,7 @@ function StepProducts({ value, onChange }: { value: string; onChange: (v: string
     <div>
       <p className="text-green text-xs font-semibold uppercase tracking-wider mb-2">Frage 7 von 8</p>
       <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Beschreibt eure Produkte kurz und sagt uns, wie viele Materialnummern (SKU) es gibt.</h2>
-      <p className="text-gray-400 text-sm mb-6">Je genauer die Angabe, desto besser k\u00f6nnen wir euch beraten.</p>
+      <p className="text-gray-400 text-sm mb-6">Je genauer die Angabe, desto besser können wir euch beraten.</p>
       <div className="relative">
         <div className="absolute left-3 top-4 text-gray-400">
           <FileText className="w-4 h-4" />
@@ -540,7 +540,7 @@ function StepShop({ value, onChange }: { value: string; onChange: (v: string) =>
     <div>
       <p className="text-green text-xs font-semibold uppercase tracking-wider mb-2">Frage 8 von 8</p>
       <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Welches Shopsystem nutzt ihr?</h2>
-      <p className="text-gray-400 text-sm mb-6">W\u00e4hle euer aktuelles System.</p>
+      <p className="text-gray-400 text-sm mb-6">Wähle euer aktuelles System.</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {SHOP_OPTIONS.map((opt) => {
           const Icon = opt.icon;
@@ -558,7 +558,7 @@ function StepBudget({ value, onChange }: { value: string; onChange: (v: string) 
     <div>
       <p className="text-green text-xs font-semibold uppercase tracking-wider mb-2">Letzte Frage</p>
       <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Wie hoch ist euer monatliches Logistik- oder Versandbudget aktuell?</h2>
-      <p className="text-gray-400 text-sm mb-6">Eine grobe Einsch\u00e4tzung gen\u00fcgt.</p>
+      <p className="text-gray-400 text-sm mb-6">Eine grobe Einschätzung genügt.</p>
       <div className="grid grid-cols-2 gap-3">
         {BUDGET_OPTIONS.map((opt) => {
           const Icon = opt.icon;
@@ -576,15 +576,15 @@ function StepContact({ formData, updateField }: { formData: FunnelFormData; upda
 
   return (
     <div>
-      <p className="text-green text-xs font-semibold uppercase tracking-wider mb-1">Gro\u00dfartig! Klingt als k\u00f6nnten wir dir helfen</p>
-      <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Wer ist die Ansprechperson f\u00fcr Logistik / Versand in deinem Unternehmen?</h2>
+      <p className="text-green text-xs font-semibold uppercase tracking-wider mb-1">Großartig! Klingt als könnten wir dir helfen</p>
+      <h2 className="text-xl sm:text-2xl font-bold text-dark mb-2">Wer ist die Ansprechperson für Logistik / Versand in deinem Unternehmen?</h2>
       <p className="text-gray-400 text-sm mb-6">Wir melden uns zeitnah bei dir.</p>
       <div className="space-y-4">
         <InputField label="Vor- und Nachname *" value={formData.name} onChange={(v) => updateField("name", v)} placeholder="Vor- und Nachname" icon={<User className="w-4 h-4" />} />
         <InputField label="Unternehmensname" value={formData.company} onChange={(v) => updateField("company", v)} placeholder="Unternehmensname" icon={<Building2 className="w-4 h-4" />} />
         <div>
           <InputField label="Deine E-Mail Adresse *" value={formData.email} onChange={(v) => updateField("email", v)} placeholder="Deine E-Mail Adresse" type="email" icon={<Mail className="w-4 h-4" />} />
-          {emailInvalid && <p className="text-red-500 text-xs mt-1">Bitte gib eine g\u00fcltige E-Mail-Adresse ein.</p>}
+          {emailInvalid && <p className="text-red-500 text-xs mt-1">Bitte gib eine gültige E-Mail-Adresse ein.</p>}
         </div>
         <InputField label="Deine Telefonnummer *" value={formData.phone} onChange={(v) => updateField("phone", v)} placeholder="Deine Telefonnummer" type="tel" icon={<Phone className="w-4 h-4" />} />
         <InputField label="Deine Unternehmenswebseite" value={formData.website} onChange={(v) => updateField("website", v)} placeholder="Deine Unternehmenswebseite" icon={<Globe className="w-4 h-4" />} />
