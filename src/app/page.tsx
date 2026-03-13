@@ -81,7 +81,7 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-green/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green/20 transition-colors">
                 <ShoppingCart className="w-7 h-7 text-green" />
               </div>
-              <h3 className="text-xl font-bold text-dark mb-3">E-Commerce Fulfillment</h3>
+              <h3 className="text-xl font-bold text-dark mb-3">B2B-zu-B2C Fulfillment</h3>
               <p className="text-gray-400 text-sm mb-5">
                 F&uuml;r etablierte Unternehmen, die ihren kompletten Versand auslagern m&ouml;chten &ndash; vom Wareneingang bis zur Zustellung.
               </p>
