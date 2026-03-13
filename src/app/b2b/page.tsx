@@ -51,20 +51,20 @@ export default function HomePage() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl">
             <p className="text-green text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4">
-              Speziell f&uuml;r wachstumsorientierte Unternehmen
+              Kontraktlogistik &amp; Warehousing aus einer Hand
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Erhalte in nur 60 Sekunden die passende Logistikl&ouml;sung f&uuml;r dein Unternehmen
+              Finde in nur 60 Sekunden deine passende Logistikl&ouml;sung
             </h1>
             <p className="text-white/70 text-base sm:text-lg mb-8 max-w-xl">
-              M&ouml;chtest du deine Kapazit&auml;ten erweitern oder deine heutigen Versandkosten optimieren? Wir zeigen dir, wie.
+              Von der Bestandsverwaltung &uuml;ber die Einlagerung bis zum Versand &ndash; wir &uuml;bernehmen deine komplette Logistik. Modern, zuverl&auml;ssig und skalierbar.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/b2b/anfrage"
                 className="inline-flex items-center justify-center gap-2 bg-green hover:bg-green-dark text-white font-semibold px-8 py-4 rounded-full transition-all shadow-lg shadow-green/25 hover:shadow-green/40 text-sm sm:text-base"
               >
-                Ja, auf jeden Fall
+                Logistikl&ouml;sung finden
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a
@@ -103,10 +103,10 @@ export default function HomePage() {
               Deine Vorteile
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark mb-4">
-              Das kannst du von uns erwarten
+              Logistik, Versand &amp; Fulfillment. Aber richtig.
             </h2>
             <p className="text-gray-400 text-sm sm:text-base">
-              Seit &uuml;ber 40 Jahren steht unser inhabergef&uuml;hrtes Logistikunternehmen f&uuml;r zuverl&auml;ssige L&ouml;sungen und pers&ouml;nliche Betreuung.
+              Mit einer Kombination aus modernsten Lagertechnologien und langj&auml;hriger Erfahrung bieten wir ma&szlig;geschneiderte L&ouml;sungen f&uuml;r dein Unternehmen.
             </p>
           </div>
 
@@ -213,7 +213,7 @@ export default function HomePage() {
               So funktioniert&apos;s
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-              Das sind deine n&auml;chsten Schritte
+              In 3 Schritten zur Logistikl&ouml;sung
             </h2>
           </div>
 
@@ -222,9 +222,9 @@ export default function HomePage() {
               <div className="w-14 h-14 bg-green/20 rounded-full flex items-center justify-center mx-auto mb-5">
                 <span className="text-green font-bold text-xl">1</span>
               </div>
-              <h3 className="text-white font-bold text-lg mb-3">Beantworte 8 Fragen</h3>
+              <h3 className="text-white font-bold text-lg mb-3">Beantworte 6 Fragen</h3>
               <p className="text-white/60 text-sm">
-                Schildere in nur 60 Sekunden deine Anforderungen &amp; Herausforderungen rund um deine Logistik, Lagerung oder Versand.
+                Schildere in nur 60 Sekunden deine Anforderungen &amp; Herausforderungen rund um Logistik, Lagerung oder Versand.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 text-center">
@@ -233,7 +233,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-white font-bold text-lg mb-3">Kostenloses Erstgespr&auml;ch</h3>
               <p className="text-white/60 text-sm">
-                In einem unverbindlichen Erstgespr&auml;ch analysieren wir gemeinsam deinen aktuellen Logistikbedarf und zeigen dir klare Optimierungsm&ouml;glichkeiten auf.
+                Wir analysieren gemeinsam deinen aktuellen Logistikbedarf und zeigen dir klare Optimierungsm&ouml;glichkeiten auf.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 text-center">
@@ -242,7 +242,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-white font-bold text-lg mb-3">Individuelles Konzept</h3>
               <p className="text-white/60 text-sm">
-                Basierend auf den Anforderungen entwickelt Huckschlag ein ma&szlig;geschneidertes Logistikkonzept mit effizienten Lagerprozessen und modernen Technologien.
+                Du erh&auml;ltst ein ma&szlig;geschneidertes Logistikkonzept mit effizienten Lagerprozessen und modernen Technologien.
               </p>
             </div>
           </div>
@@ -254,13 +254,13 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
             <p className="text-green text-xs font-semibold uppercase tracking-wider mb-3">
-              &Uuml;ber uns
+              Erfahrung &amp; Kompetenz
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-dark mb-4">
-              Dein zuverl&auml;ssiger Logistikpartner
+              Wir haben Erfahrung
             </h2>
             <p className="text-gray-400 text-sm sm:text-base">
-              Seit &uuml;ber 40 Jahren steht unser inhabergef&uuml;hrtes Logistikunternehmen f&uuml;r zuverl&auml;ssige L&ouml;sungen und pers&ouml;nliche Betreuung. Mit Standorten in Fr&ouml;ndenberg und Arnsberg bieten wir mittelst&auml;ndische Flexibilit&auml;t kombiniert mit modernster Technik.
+              Huckschlag ist seit mehr als 40 Jahren erfahren in der Logistik, im Versand sowie der gesamten Supply Chain. Wir sind dein verl&auml;sslicher Partner &ndash; heute und in Zukunft.
             </p>
           </div>
 
@@ -323,16 +323,16 @@ export default function HomePage() {
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-            Lass uns &uuml;ber dein Modell sprechen
+            Bereit f&uuml;r die n&auml;chste Stufe?
           </h2>
           <p className="text-white/70 text-base sm:text-lg mb-8 max-w-xl mx-auto">
-            Und deine Logistik aufs n&auml;chste Level bringen. Finde in nur 60 Sekunden deine passende Logistikl&ouml;sung.
+            Finde in nur 60 Sekunden heraus, welche Logistikl&ouml;sung perfekt zu deinem Unternehmen passt.
           </p>
           <Link
             href="/b2b/anfrage"
             className="inline-flex items-center gap-2 bg-green hover:bg-green-dark text-white font-semibold px-10 py-4 rounded-full transition-all shadow-lg shadow-green/25 hover:shadow-green/40 text-base sm:text-lg"
           >
-            Hier gelangst du zur Unternehmensanalyse
+            In 60 Sekunden zur Logistikl&ouml;sung
             <ArrowRight className="w-5 h-5" />
           </Link>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-white/40">
